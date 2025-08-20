@@ -29,7 +29,7 @@ void quickSort ( string dados[], int menor, int maior);
 
 int main()
 {
-	cout << "n/";
+	cout << "\n";
 	cout << "Exemplo quick Sort \n\n";
 
 	int i;
@@ -103,5 +103,41 @@ void quickSort ( string dados[], int menor, int maior){
         quickSort(dados, menor, pivo -1);
         quickSort(dados, pivo +1  maior);
     }
+
+ Ponteiros
+ /******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <stdio.h>
+#include <iostream>
+#include <iomanip>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+   int idade = 25;
+   int *idadePtr = &idade;
+   int *nomePtr = nullptr; 
+   
+   cout << " 1 . Valor de < idade > : " << idade << "\n" ;
+   cout << " 1 . Enderedo de < idade> : " <<&idade << "\n\n";
+   cout << " 2 . Valor de <idadePTR> : " << idadePtr << "\n";
+   cout << "2. O valor apontado por <*idadePTR> : " <<*idadePtr << "\n\n";
+   
+   cout << " Alterando a idade \n\n";
+   *idadePtr = 30;;
+   cout << " idade alterada " << *idadePtr;
+   
+  
+    return 0;
+}
 }
 
