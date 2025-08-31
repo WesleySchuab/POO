@@ -20,7 +20,7 @@ int main(){
     
     salario = vhora * numeroh;
     cout << endl << "Seu salario: " ;
-    std::cout  << std::fixed << std::setprecision(2) << salario << std::endl;
-    
+    cout  << fixed << setprecision(2) << salario << endl;
+        
     return 0;
 }
