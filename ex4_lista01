@@ -1,0 +1,26 @@
+#include<iomanip>
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    
+    float vhora, numeroh, salario;
+    string nomem;
+    
+    cout << endl;
+    cout << "Quanto voce ganha por hora ? : ";
+    cin >> vhora;
+    
+    
+    cout << endl << "Informe o nome do mes \n";
+    cin >> nomem;
+    
+    cout << endl << "Informe o numero de horas trabalhadas neste mes \n";
+    cin >> numeroh;
+    
+    salario = vhora * numeroh;
+    cout << endl << "Seu salario: " ;
+    std::cout  << std::fixed << std::setprecision(2) << salario << std::endl;
+    
+    return 0;
+}
