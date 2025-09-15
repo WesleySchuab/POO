@@ -14,12 +14,14 @@ int main()
     cout << " Informe o tamanho da parede em m²: ";
     cin >> area_parede;
     quantidade_litros = area_parede / 3;
-    if(quantidade_litros > 18 ){
+   /* if(quantidade_litros > 18 ){
         quantidade_latas = quantidade_litros / 18 ;
         quantidade_latas = ceil(quantidade_latas);
     }else{
         quantidade_latas = 1;
     }
+        */
+     quantidade_latas =  ceil( quantidade_litros / 18 );    
     valor_total = 80 * quantidade_latas;
     cout << endl;
     if(quantidade_latas > 1){
