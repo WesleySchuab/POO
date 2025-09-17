@@ -198,3 +198,7 @@ void soma(int *resultado, const int *arrayPtr, const size_t tamanho){
     }
 }
 
+################################################################
+Assinatura das função 
+no int main  são passados varios argumentos inclusive o nome do programa é um aargumento
+prova atté o capitulo 8 deitell execssão do cap 8
